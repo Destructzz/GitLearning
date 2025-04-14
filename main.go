@@ -126,5 +126,11 @@ func main() {
 	} else {
 		fmt.Printf("Задача обновлена: %+v\n", updatedTask)
 	}
-	
+
+	err = tm.DeleteTask(task.ID)
+	if err != nil {
+		fmt.Printf("Ошибка при удалении задачи: %v\n", err)
+	} else {
+		fmt.Println("Задача удалена")
+	}
 }
