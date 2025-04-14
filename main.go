@@ -119,4 +119,12 @@ func main() {
 	
 	tasks := tm.GetAllTasks()
 	fmt.Printf("Всего задач: %d\n", len(tasks))
+
+	updatedTask, err := tm.UpdateTask(task.ID, "Обновленная задача", "Описание обновленной задачи")
+	if err != nil {
+		fmt.Printf("Ошибка при обновлении задачи: %v\n", err)
+	} else {
+		fmt.Printf("Задача обновлена: %+v\n", updatedTask)
+	}
+	
 }
