@@ -112,7 +112,6 @@ func (tm *TaskManager) GetAllTasks() []Task {
 
 func main() {
 	tm := NewTaskManager()
-	
 	// Пример использования
 	task := tm.AddTask("Тестовая задача", "Описание тестовой задачи")
 	fmt.Printf("Создана задача: %+v\n", task)
