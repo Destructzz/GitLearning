@@ -111,6 +111,7 @@ func (tm *TaskManager) GetAllTasks() []Task {
 }
 
 func main() {
+	fmt.Println("Starting app")
 	tm := NewTaskManager()
 	// Пример использования
 	task := tm.AddTask("Тестовая задача", "Описание тестовой задачи")
